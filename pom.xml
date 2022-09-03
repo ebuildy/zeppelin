@@ -101,6 +101,7 @@
     <scala.version>${scala.2.10.version}</scala.version>
     <scala.binary.version>2.10</scala.binary.version>
     <scala.2.11.version>2.11.8</scala.2.11.version>
+    <scala.2.13.version>2.13.4</scala.2.13.version>
     <scalatest.version>3.0.7</scalatest.version>
     <scalacheck.version>1.12.5</scalacheck.version>
 
@@ -1919,6 +1920,15 @@
       <properties>
         <scala.version>${scala.2.11.version}</scala.version>
         <scala.binary.version>2.11</scala.binary.version>
+      </properties>
+    </profile>
+
+    <profile>
+      <id>scala-2.13</id>
+      <properties>
+        <scala.version>${scala.2.13.version}</scala.version>
+        <scala.binary.version>2.13</scala.binary.version>
+        <scalatest.version>3.0.8</scalatest.version>
       </properties>
     </profile>
 
