@@ -1,0 +1,54 @@
+<settings>
+    <profiles>
+        <profile>
+           <id>https</id>
+              <activation><activeByDefault>true</activeByDefault></activation>
+           <repositories>
+
+             <repository>
+               <id>apache.snapshots</id>
+               <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+               <releases><enabled>false</enabled></releases>
+               <snapshots><enabled>true</enabled></snapshots>
+             </repository>
+           </repositories>
+         </profile>
+      </profiles>
+    <mirrors>
+        <mirror>
+            <id>maven-default-http-blocker</id>
+            <mirrorOf>external:http:*</mirrorOf>
+            <name>Pseudo repository to mirror external repositories initially using HTTP.</name>
+            <url>http://0.0.0.0/</url>
+            <blocked>false</blocked>
+          </mirror>
+          <mirror>
+            <id>maven-default-http-blocker</id>
+            <mirrorOf>external:http:*</mirrorOf>
+            <name>Pseudo repository to mirror external repositories initially using HTTP.</name>
+            <url>http://repository.apache.org/snapshots</url>
+            <blocked>false</blocked>
+          </mirror>
+          <mirror>
+            <id>maven-default-http-blocker</id>
+            <mirrorOf>external:http:*</mirrorOf>
+            <name>Pseudo repository to mirror external repositories initially using HTTP.</name>
+            <url>http://repository.jboss.org/maven2</url>
+            <blocked>false</blocked>
+          </mirror>
+          <mirror>
+            <id>maven-default-http-blocker</id>
+            <mirrorOf>external:http:*</mirrorOf>
+            <name>Pseudo repository to mirror external repositories initially using HTTP.</name>
+            <url>http://oss.sonatype.org/content/repositories/jboss-snapshots</url>
+            <blocked>false</blocked>
+          </mirror>
+          <mirror>
+            <id>maven-default-http-blocker</id>
+            <mirrorOf>external:http:*</mirrorOf>
+            <name>Pseudo repository to mirror external repositories initially using HTTP.</name>
+            <url>http://snapshots.jboss.org/maven2</url>
+            <blocked>false</blocked>
+          </mirror>
+    </mirrors>
+</settings>
