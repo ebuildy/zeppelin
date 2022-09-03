@@ -1,6 +1,6 @@
 name: core
 on:
-  push:
+#  push:
   pull_request:
     branches:
       - master

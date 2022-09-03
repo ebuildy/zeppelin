@@ -1,10 +1,6 @@
-name: core
+name: spark
 on:
   push:
-    branches:
-      - master
-      - spark-*
-    types: [opened, synchronize]
 
 env:
   # Disable keepAlive and pool

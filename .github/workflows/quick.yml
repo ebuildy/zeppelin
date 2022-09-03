@@ -1,6 +1,6 @@
 name: quick
 on:
-  push:
+#  push:
   pull_request:
     branches:
       - master
