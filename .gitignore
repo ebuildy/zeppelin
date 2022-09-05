@@ -129,3 +129,4 @@ tramp
 
 # jEnv file
 .java-version
+.RData

@@ -49,6 +49,7 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.reset;
 import static org.mockito.Mockito.verify;
 
+import org.apache.zeppelin.spark.SparkScala213Interpreter;
 
 public class SparkInterpreterTest {
 
