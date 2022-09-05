@@ -53,7 +53,7 @@ jobs:
       - name: install application with some interpreter
         run: ./mvnw install -Pbuild-distr -DskipRat -DskipTests -pl zeppelin-server,zeppelin-web,spark-submit,spark/scala-2.13,markdown,angular,shell -am -Pscala-2.13 -Phelium-dev -P${{ matrix.hadoop }} -B
       - name: install and test plugins
-        run: ./mvnw package -DskipRat -pl zeppelin-plugins -amd -B
+        run: ./mvnw package -DskipRat -pl zeppelin-plugins -am -B
       - name: Setup conda environment with python 3.7 and R
         uses: conda-incubator/setup-miniconda@v2
         with:
@@ -152,7 +152,7 @@ jobs:
       - name: install environment
         run: |
           ./mvnw install -DskipTests -DskipRat -Phadoop3 -Pscala-2.13 -Pintegration -pl zeppelin-interpreter-integration,zeppelin-web,spark-submit,spark/scala-2.13,markdown,jdbc,shell -am
-          ./mvnw package -DskipRat -pl zeppelin-plugins -amd -DskipTests -B
+          ./mvnw package -DskipRat -pl zeppelin-plugins -am -DskipTests -B
       - name: Setup conda environment with python 3.7 and R
         uses: conda-incubator/setup-miniconda@v2
         with:
@@ -203,7 +203,7 @@ jobs:
       - name: install environment
         run: |
           ./mvnw install -DskipTests -DskipRat -pl zeppelin-interpreter-integration,zeppelin-web,spark-submit,spark/scala-2.13,markdown -am -Pscala-2.13 -Phadoop3 -Pintegration -B
-          ./mvnw clean package -pl zeppelin-plugins -amd -DskipTests -B
+          ./mvnw clean package -pl zeppelin-plugins -am -DskipTests -B
       - name: Setup conda environment with python 3.7 and R
         uses: conda-incubator/setup-miniconda@v2
         with:
